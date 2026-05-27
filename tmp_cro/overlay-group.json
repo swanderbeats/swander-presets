@@ -214,20 +214,18 @@
     },
     "cookie-banner": {
       "type": "cookie-banner",
+      "custom_css": [
+        ".cookie-modal .drawer__inner {max-width: 22rem; padding: 1rem 1.25rem;}",
+        ".cookie-modal .drawer__inner {border-radius: 12px;}",
+        ".cookie-banner>*+*:not(.spacing-section) {margin-block-start: 0.5rem;}",
+        ".cookie__buttons .button {padding: 0.5rem 1.25rem; font-size: 0.8125rem;}"
+      ],
       "blocks": {
-        "image": {
-          "type": "image",
-          "settings": {
-            "image_width": "custom",
-            "image_max_width": 40,
-            "image_max_width_mobile": 40
-          }
-        },
         "heading": {
           "type": "heading",
           "settings": {
             "heading": "Cookies",
-            "heading_size": "text-lg-2xl",
+            "heading_size": "text-base-xl",
             "heading_tag": "h2",
             "highlighted_text": "none",
             "highlighted_scribble": "circle",
@@ -239,7 +237,7 @@
           "settings": {
             "text": "<p>Ce site utilise des cookies pour améliorer ton expérience de navigation.</p>",
             "text_font": "body",
-            "text_size": "text-base",
+            "text_size": "text-sm",
             "text_max_size": 32,
             "text_line_height": 1.6,
             "text_letter_spacing": 0,
@@ -252,8 +250,8 @@
         "spacing": {
           "type": "spacing",
           "settings": {
-            "height": 16,
-            "height_mobile": 12
+            "height": 8,
+            "height_mobile": 4
           }
         },
         "buttons": {
@@ -265,7 +263,6 @@
         }
       },
       "block_order": [
-        "image",
         "heading",
         "text",
         "spacing",
